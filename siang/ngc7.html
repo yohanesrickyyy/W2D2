@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGC 7</title>
+  </head>
+  <body>
+    <script>
+      //  Bandingkan Angka/ Soal 1
+
+      // let angka1 = 10;
+      // let masukanAngka = prompt("masukan angka");
+
+      // if (!isNaN(masukanAngka)) {
+      //   if (masukanAngka > angka1) {
+      //     alert("true");
+      //   } else if (masukanAngka < angka1) {
+      //     alert("false");
+      //   }
+      //   else {
+      //     alert("-1")
+      //   }
+      // } else
+      // {
+      //   alert("Input tidak valid!")
+      // }
+
+      // Graduates /soal 2
+
+      // function hasilRapot() {
+      //   let nama = prompt("Masukan nama anda");
+      //   let nilai = prompt("Masukan nilai anda");
+      //   let absen = prompt("Masukan absen anda");
+
+      //   if (nilai >70 && absen <=5){
+      //     alert("Selamat " + nama +" Kamu Lulus!");
+      //   } else if( nilai <70 && absen <= 5) {
+      //     alert(nama + ", kamu tidak lulus, karena nilainya dibawah KKM");
+      //   } else if( nilai >70 && absen >= 5) { // ini pas review gabisa karena salah di penggunaan < mas. harusnya pake >
+      //     alert(nama+ ", kamu tidak lulus karena sering absen");
+      //   } else {
+      //     alert ("Input tidak valid!")
+      //   }
+
+      // }
+      //   hasilRapot();
+
+      // Soal nomor 3 Ganti Format Waktu
+
+      // function formatWaktu() {
+      //   let inputUser = prompt("Konversi Detik menjadi Menit");
+      //   let detik = parseInt (inputUser);
+      //   let menit = Math.floor(detik / 60);
+      //   detik = detik % 6
+      //   if (detik <script 10) {
+      //     alert(menit + ":0" + detik);
+      //   } else {
+      //     alert(menit + ":" + detik);
+      //   }
+      // }
+      // formatWaktu();
+    </script>
+    <!-- Soal nomor 4 / Gacha -->
+    <p id="random">Gacha</p>
+    <button ondblclick="gacha()">Klik disini!</button>
+    <script>
+      function gacha() {
+        const random = Math.floor(Math.random() * 5) + 1;
+        switch (random) {
+          case 1:
+            document.getElementById("random").innerHTML = "Coba lagi ya";
+            break;
+          case 2:
+            document.getElementById("random").innerHTML =
+              "Selamat kamu mendapatkan kupon sebanyak 5";
+            break;
+          case 3:
+            document.getElementById("random").innerHTML =
+              "Selamat kamu mendapatkan kupon sebanyak 15";
+            break;
+          case 4:
+            document.getElementById("random").innerHTML =
+              "Selamat kamu mendapatkan kupon sebanyak 50";
+            break;
+          case 5:
+            document.getElementById("random").innerHTML =
+              "Selamat kamu mendapatkan kupon sebanyak 100";
+            break;
+          default:
+            alert("Tidak valid");
+        }
+      }
+    </script>
+  </body>
+</html>
